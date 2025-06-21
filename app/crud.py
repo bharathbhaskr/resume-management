@@ -48,6 +48,16 @@ def list_resumes(db: Session, skip=0, limit=100):
 def get_resume(db: Session, resume_id: int):
     return db.query(models.Resume).filter(models.Resume.resume_id == resume_id).first()
 
+def update_resume(db, resume_id, resume_in):
+    resume = db.query(models.Resume).filter_by(resume_id=resume_id).first()
+    if not resume:
+        return None
+    resume.title = resume_in.title
+    resume.file_url = str(resume_in.file_url)
+    db.commit()
+    db.refresh(resume)
+    return resume
+
 def delete_resume(db: Session, resume_id: int):
     resume = db.query(models.Resume).filter(models.Resume.resume_id == resume_id).first()
     if resume:
