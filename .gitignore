@@ -82,6 +82,11 @@ target/
 profile_default/
 ipython_config.py
 
+# Virtual environments
+resume-api-env/
+venv/
+.venv/
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
@@ -192,3 +197,56 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+
+# VS Code settings
+.vscode/
+*.code-workspace
+
+# Environment & config
+.env
+*.env
+.env.*
+
+# Logs and DB
+logs/
+*.log
+*.sqlite3
+*.db
+
+# Alembic
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# Docker
+*.pid
+*.pid.lock
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitmodules
+
+# Docker Compose local volume mounts
+pg_data/
+
+# Others you may want to add
+# __init__.pyc
+
+# Optional: ignore your IDE's project files (PyCharm, etc.)
+.idea/
