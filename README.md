@@ -144,36 +144,6 @@ See **Swagger UI** at `/docs` for detailed request/response examples.
 * Volumes support hot-reloading code in development.
 * All secrets/configs set via `docker-compose.yml` (override with `.env` if needed).
 
----
-
-## 📑 Example API Calls (for Postman/cURL)
-
-### Create Candidate
-
-```http
-POST http://localhost:8000/candidates/
-Content-Type: application/json
-
-{
-  "first_name": "Testt",
-  "last_name": "User",
-  "email": "test@example.com",
-  "phone": "555-1111"
-}
-```
-
-### Create Resume
-
-```http
-POST http://localhost:8000/resumes/
-Content-Type: application/json
-
-{
-  "candidate_id": 1,
-  "title": "Backend Resume",
-  "file_url": "https://example.com/resume.pdf"
-}
-```
 
 ## 🙋‍♂️ Author
 
