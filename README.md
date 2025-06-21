@@ -14,7 +14,7 @@ A full-stack, Dockerized RESTful API built with **FastAPI** and **PostgreSQL** f
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. **Clone the Repo**
 
@@ -130,7 +130,7 @@ See **Swagger UI** at `/docs` for detailed request/response examples.
 
 ---
 
-## 🛠️ Database Migrations
+## Database Migrations
 
 * Handled by **Alembic**.
 * On startup, Docker entrypoint waits for DB & runs `alembic upgrade head`.
@@ -145,7 +145,7 @@ See **Swagger UI** at `/docs` for detailed request/response examples.
 * All secrets/configs set via `docker-compose.yml` (override with `.env` if needed).
 
 
-## 🙋‍♂️ Author
+## Author
 
 * [Bharath Bhaskar](https://github.com/bharathbhaskr)
 
@@ -153,6 +153,6 @@ See **Swagger UI** at `/docs` for detailed request/response examples.
 
 ## 📝 License
 
-MIT License (or your choice)
+MIT License
 
 ---
